@@ -1,0 +1,53 @@
+/*
+  Receive_Data[0] = 5 ; 
+  printf("Receive Buffer Baslangic Degeri = %d\n\r",Receive_Data[0]);
+  HAL_Delay(200);
+    
+  
+  HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, Status_Reg, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+  printf("Received Data = %d\n\r",Receive_Data[0]);
+  HAL_Delay(200);
+  */
+  /*--------------CTRL1 Registerine 15 degeri yazan ve okuyan kod parcasi---------------------*/
+  /*
+  Transmit_Data[0] = 15 ; 
+  HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+  HAL_Delay(200);
+  HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+  printf("Received Data = %d\n\r",Receive_Data[0]);
+  HAL_Delay(200);
+  */
+  
+  /*--------------CTRL1 Registerine 7 yazan(Default ayarlar) ve okuyan kod parcasi-----------------------------*/
+  /*
+  Transmit_Data[0] = 7 ; 
+  HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+  HAL_Delay(200);
+  HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+  printf("Received Data = %d\n\r",Receive_Data[0]);
+  HAL_Delay(200);
+  */
+  /*------------------------------------------------------------------------------------------*/
+  
+  /*--------------CTRL1 Registerine 63 yazan ve okuyan kod parcasi-----------------------------*/
+  /*
+  Transmit_Data[0] = 63 ; 
+  HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+  HAL_Delay(200);
+  HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+  printf("Received Data = %d\n\r",Receive_Data[0]);
+  HAL_Delay(200);
+  */
+  /*-----------------------------------------------------------------------------------------*/
+  
+/*--------------CTRL1 Registerine 31 yazan(1hz) ve okuyan kod parcasi-----------------------------*/
+  /*
+  Transmit_Data[0] = 31 ; 
+  HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, ctrl_reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+  HAL_Delay(200);
+  HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, ctrl_reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+  printf("Received Data = %d\n\r",Receive_Data[0]);
+  HAL_Delay(200);
+  */
+  /*-----------------------------------------------------------------------------------------*/
+  

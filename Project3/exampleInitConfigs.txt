@@ -1,0 +1,162 @@
+/*---------ACC INIT (10 Hz)-----------*/
+  
+//  
+//  Receive_Data[0] = 8 ; 
+//  Receive_Data[1] = 8 ; 
+//  Transmit_Data[0] = 31 ; 
+//  Transmit_Data_1[0] = 0 ;
+//  do{
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);  
+//    }while(sonuc != HAL_OK);
+//    
+//  
+//    do{
+//      sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//      printf("CTRL 1 Register Degeri = %d\n\r",Receive_Data[0]);
+//      printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//    }while(sonuc != HAL_OK); 
+//    
+//  /*CTRL_Reg_2 gerekli ayarlama yapiliyor ve okunuyor*/
+//     do {
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data_1, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);
+//  } while (sonuc != HAL_OK);  
+//      
+//  
+//  do {
+//    sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//    printf("CTRL Reg 2 Register Degeri = %d\n\r",Receive_Data[0]);
+//    printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//  } while(sonuc != HAL_OK);
+//  
+//  
+//    /*Y den çikis aliniyor*/
+//     do{
+//      sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, OUT_Z_H_Reg, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//      printf("Out Y Cikis Degerleri = %d\n\r",Receive_Data[0]);
+//      printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//    
+//      
+//      
+//    }while(sonuc!= HAL_OK);  
+  /*--------------------*/
+  
+  
+  /*---------ACC INIT 2 (50Hz)-----------*/
+  
+//  
+//  Receive_Data[0] = 8 ; 
+//  Receive_Data[1] = 8 ; 
+//  Transmit_Data[0] = 79 ; 
+//  Transmit_Data_1[0] = 0 ;
+//  do{
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);  
+//    }while(sonuc != HAL_OK);
+//    
+//  
+//    do{
+//      sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//      printf("CTRL 1 Register Degeri = %d\n\r",Receive_Data[0]);
+//      printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//    }while(sonuc != HAL_OK); 
+//    
+//  /*CTRL_Reg_2 gerekli ayarlama yapiliyor ve okunuyor*/
+//     do {
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data_1, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);
+//  } while (sonuc != HAL_OK);  
+//      
+//  
+//  do {
+//    sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//    printf("CTRL Reg 2 Register Degeri = %d\n\r",Receive_Data[0]);
+//    printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//  } while(sonuc != HAL_OK);
+//  
+//  
+//    /*Y den çikis aliniyor*/
+//     do{
+//      sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, OUT_Z_H_Reg, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//      printf("Out Y Cikis Degerleri = %d\n\r",Receive_Data[0]);
+//      printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//    
+//      
+//      
+//    }while(sonuc!= HAL_OK);  
+  /*---------------------------------------*/
+  /*----------ACC INIT 3 (200Hz)-----------*/
+  
+//  
+//  Receive_Data[0] = 8 ; 
+//  Receive_Data[1] = 8 ; 
+//  Transmit_Data[0] = 111 ; 
+//  Transmit_Data_1[0] = 0 ;
+//  do{
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);  
+//    }while(sonuc != HAL_OK);
+//    
+//  
+//    do{
+//      sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//      printf("CTRL 1 Register Degeri = %d\n\r",Receive_Data[0]);
+//      printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//    }while(sonuc != HAL_OK); 
+//    
+//  /*CTRL_Reg_2 gerekli ayarlama yapiliyor ve okunuyor*/
+//     do {
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data_1, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);
+//  } while (sonuc != HAL_OK);  
+//      
+//  
+//  do {
+//    sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//    printf("CTRL Reg 2 Register Degeri = %d\n\r",Receive_Data[0]);
+//    printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//  } while(sonuc != HAL_OK);
+//    
+/*-----------------------------------------*/
+/*---------------ACC INIT 4(1620Hz)-----------------*/   
+//  
+//  Receive_Data[0] = 8 ; 
+//  Receive_Data[1] = 8 ; 
+//  Transmit_Data[0] = 143 ; 
+//  Transmit_Data_1[0] = 0 ;
+//  do{
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);  
+//    }while(sonuc != HAL_OK);
+//    
+//  
+//    do{
+//      sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_1, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//      printf("CTRL 1 Register Degeri = %d\n\r",Receive_Data[0]);
+//      printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//    }while(sonuc != HAL_OK); 
+//    
+//  /*CTRL_Reg_2 gerekli ayarlama yapiliyor ve okunuyor*/
+//     do {
+//      sonuc = HAL_I2C_Mem_Write(&hi2c1, Write_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Transmit_Data_1, strlen((char *)Transmit_Data), 1000);
+//      HAL_Delay(200);
+//      printf("Yazma fonk sonuc = %d\r\n",sonuc);
+//  } while (sonuc != HAL_OK);  
+//      
+//  
+//  do {
+//    sonuc = HAL_I2C_Mem_Read(&hi2c1, Read_Dev_Add, CTRL_Reg_2, I2C_MEMADD_SIZE_8BIT, (uint8_t *)Receive_Data, strlen((char *)Receive_Data), 1000);
+//    printf("CTRL Reg 2 Register Degeri = %d\n\r",Receive_Data[0]);
+//    printf("Okuma fonk sonuc = %d\r\n",sonuc) ;
+//  } while(sonuc != HAL_OK);
+  
+   
+/*--------------------------------------------------*/  
